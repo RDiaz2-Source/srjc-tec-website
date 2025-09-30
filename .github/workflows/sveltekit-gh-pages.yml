@@ -1,5 +1,5 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+name: Deploy SvelteKit to GitHub Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -38,6 +38,9 @@ jobs:
           deno-version: 2.5.2
           # Cache downloaded modules & packages automatically in GitHub Actions cache.
           cache: true
+
+      - name: Install Dependencies
+        run: deno install --allow-scripts
 
       - name: Build with SvelteKit
         run: deno run build
