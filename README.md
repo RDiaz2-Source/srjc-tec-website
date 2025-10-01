@@ -1,8 +1,13 @@
-## Developing
 
-Once you've created a project and installed dependencies with `deno install`, start a development server:
+## Contributing
+
+For an in-depth setup guide, see [setup](https://github.com/funnbot/srjc-tec-website/wiki/Development-Setup).
 
 ```sh
+# install dependencies
+deno install --allow-scripts
+
+# start local development server
 deno run dev
 
 # or start the server and open the app in a new browser tab
