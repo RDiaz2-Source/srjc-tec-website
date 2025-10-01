@@ -1,4 +1,3 @@
-
 ## Contributing
 
 For an in-depth setup guide, see [setup](https://github.com/funnbot/srjc-tec-website/wiki/Development-Setup).
@@ -23,4 +22,3 @@ deno run build
 ```
 
 You can preview the production build with `deno run preview`.
-
