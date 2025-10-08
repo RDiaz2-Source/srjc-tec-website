@@ -1,16 +1,16 @@
 // inline document settings
 // https://cspell.org/docs/Configuration/document-settings
-
 {
 	"version": "0.2",
 	"language": "en",
 	// list of words to be always considered correct
 	"words": [
-		"poppanator",
-		"Stylesheet",
-		"srjc",
-		"sveltex",
 		"dataurl",
+		"oklch",
+		"poppanator",
+		"srjc",
+		"Stylesheet",
+		"sveltex",
 		"unenc"
 	]
 }

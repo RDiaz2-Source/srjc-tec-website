@@ -36,6 +36,10 @@
 		"strings": "on"
 	},
 
+	"svelte.plugin.svelte.defaultScriptLanguage": "ts",
+	"deno.codeLens.references": true,
+	"deno.enable": true,
+
 	"emmet.extensionsPath": ["./.vscode/emmet"],
 	"emmet.includeLanguages": {
 		"svelte": "html"
