@@ -18,6 +18,9 @@
 	"[html]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
+	"[snippets]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
 
 	"files.associations": {
 		"*.css": "tailwindcss"
@@ -31,5 +34,12 @@
 
 	"editor.quickSuggestions": {
 		"strings": "on"
-	}
+	},
+
+	"emmet.extensionsPath": ["./.vscode/emmet"],
+	"emmet.includeLanguages": {
+		"svelte": "html"
+	},
+	"svelte.plugin.css.completions.emmet": false,
+ 	"svelte.plugin.html.completions.emmet": false
 }

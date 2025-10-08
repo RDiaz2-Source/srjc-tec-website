@@ -1,0 +1,11 @@
+{
+	"html": {
+		"snippets": {
+			"script": "script[lang=ts]",
+			"style": "style[lang=postcss]"
+		}
+	},
+	"css": {
+		"snippets": {}
+	}
+}
