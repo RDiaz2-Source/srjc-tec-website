@@ -29,8 +29,12 @@
 		"editor.defaultFormatter": "bradlc.vscode-tailwindcss"
 	},
 	"tailwindCSS.experimental.configFile": "./src/app.css",
+	"tailwindCSS.lint.cssConflict": "ignore",
 
-	"eslint.validate": ["javascript", "typescript"],
+	"eslint.validate": ["javascript", "typescript", "svelte"],
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit"
+	},
 
 	"editor.quickSuggestions": {
 		"strings": "on"
