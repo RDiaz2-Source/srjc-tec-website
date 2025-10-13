@@ -13,8 +13,4 @@
 
 <style lang="postcss">
 	@reference "tailwindcss";
-
-	@theme {
-		--color-primary: #1e40af;
-	}
 </style>
