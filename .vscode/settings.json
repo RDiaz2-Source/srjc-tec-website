@@ -31,6 +31,9 @@
 	"tailwindCSS.experimental.configFile": "./src/app.css",
 	"tailwindCSS.lint.cssConflict": "ignore",
 
+	"eslint.codeAction.disableRuleComment": {
+		"enable": false
+	},
 	"eslint.validate": ["javascript", "typescript", "svelte"],
 	"editor.codeActionsOnSave": {
 		"source.fixAll.eslint": "explicit"

@@ -15,11 +15,13 @@ const gitignorePath = fileURLToPath(new URL('./.gitignore', import.meta.url));
 export default defineConfig(
 	includeIgnoreFile(gitignorePath),
 	js.configs.recommended,
-	...ts.configs.recommended,
-	...svelte.configs.recommended,
+	ts.configs.recommendedTypeChecked,
+	ts.configs.stylisticTypeChecked,
+	svelte.configs.recommended,
 	prettier,
-	...svelte.configs.prettier,
+	svelte.configs.prettier,
 	{
+		name: 'global',
 		languageOptions: {
 			globals: { ...globals.browser, ...globals.node },
 		},
@@ -27,9 +29,12 @@ export default defineConfig(
 			// typescript-eslint strongly recommend that you do not use the no-undef lint rule on TypeScript projects.
 			// see: https://typescript-eslint.io/troubleshooting/faqs/eslint/#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
 			'no-undef': 'off',
+			// Annoying during development, duplicated by ts(6133) which is of type 'note'
+			'@typescript-eslint/no-unused-vars': 'off',
 		},
 	},
 	{
+		name: 'svelte',
 		files: ['**/*.svelte', '**/*.svelte.ts', '**/*.svelte.js'],
 		languageOptions: {
 			parser: svelteParser,
@@ -42,6 +47,7 @@ export default defineConfig(
 		},
 	},
 	{
+		name: 'better-tailwindcss',
 		plugins: {
 			'better-tailwindcss': eslintPluginBetterTailwindcss,
 		},
