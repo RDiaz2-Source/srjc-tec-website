@@ -1,5 +1,4 @@
 {
-	"svelte.enable-ts-plugin": true,
 	"[svelte]": {
 		"editor.defaultFormatter": "svelte.svelte-vscode"
 	},
@@ -29,8 +28,12 @@
 		"editor.defaultFormatter": "bradlc.vscode-tailwindcss"
 	},
 	"tailwindCSS.experimental.configFile": "./src/app.css",
+	// duplicate of better-tailwindcss/no-conflicting-classes
 	"tailwindCSS.lint.cssConflict": "ignore",
 
+	"eslint.codeAction.showDocumentation": {
+		"enable": true
+	},
 	"eslint.codeAction.disableRuleComment": {
 		"enable": false
 	},
@@ -43,14 +46,15 @@
 		"strings": "on"
 	},
 
-	"svelte.plugin.svelte.defaultScriptLanguage": "ts",
-	"deno.codeLens.references": true,
-	"deno.enable": true,
+	"deno.enable": false,
 
 	"emmet.extensionsPath": ["./.vscode/emmet"],
 	"emmet.includeLanguages": {
 		"svelte": "html"
 	},
+
+	"svelte.enable-ts-plugin": true,
+	"svelte.plugin.svelte.defaultScriptLanguage": "ts",
 	"svelte.plugin.css.completions.emmet": false,
- 	"svelte.plugin.html.completions.emmet": false
+	"svelte.plugin.html.completions.emmet": false
 }

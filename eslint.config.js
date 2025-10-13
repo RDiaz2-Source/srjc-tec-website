@@ -21,7 +21,7 @@ export default defineConfig(
 	prettier,
 	svelte.configs.prettier,
 	{
-		name: 'global',
+		name: 'general',
 		languageOptions: {
 			globals: { ...globals.browser, ...globals.node },
 		},
@@ -32,6 +32,20 @@ export default defineConfig(
 			// Annoying during development, duplicated by ts(6133) which is of type 'note'
 			'@typescript-eslint/no-unused-vars': 'off',
 		},
+	},
+	{
+		name: 'typed-linting',
+		files: ['src/**/*.ts', 'src/**/*.js'],
+		languageOptions: {
+			parserOptions: {
+				projectService: true,
+			},
+		},
+	},
+	{
+		name: 'disable-config-typed-linting',
+		files: ['*.config.js', '*.config.ts'],
+		extends: [ts.configs.disableTypeChecked],
 	},
 	{
 		name: 'svelte',
