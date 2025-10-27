@@ -18,6 +18,7 @@
 	],
 	"endOfLine": "lf",
 	"proseWrap": "always",
+	"bracketSameLine": true,
 
 	"svelteStrictMode": true,
 
