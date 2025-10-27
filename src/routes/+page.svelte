@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ExampleWireframe from "$lib/ExampleWireframe.svelte";
+	import Header from '$lib/Header.svelte';
 </script>
 
-<ExampleWireframe />
+<Header></Header>

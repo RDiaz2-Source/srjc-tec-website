@@ -3,4 +3,16 @@
 
 @theme inline {
 	--color-button-primary: var(--color-red-400);
+	--color-button-tab-active: var(--color-black);
+}
+
+@layer theme {
+	:root,
+	:host {
+		/* active when prefers-color-scheme: dark */
+		@variant dark {
+			--color-button-primary: var(--color-red-400);
+			--color-button-tab-active: var(--color-white);
+		}
+	}
 }
