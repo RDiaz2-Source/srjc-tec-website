@@ -2,8 +2,22 @@
 @plugin "@tailwindcss/typography";
 
 @theme inline {
-	--color-button-primary: var(--color-red-400);
-	--color-button-tab-active: var(--color-black);
+	--color-header-content: var(--color-black);
+	--color-header: var(--color-green-50);
+
+	--color-nav-tab-label: var(--color-zinc-800);
+	--color-nav-tab-hover: color-mix(
+		in oklab,
+		var(--color-zinc-500),
+		70% transparent
+	);
+
+	--color-button-primary: var(--color-green-400);
+	--color-button-secondary: var(--color-green-600);
+	--color-button-label: var(--color-zinc-600);
+	--color-button-hover: var(--color-green-600);
+
+	--color-brand: var(--color-green-600);
 }
 
 @layer theme {

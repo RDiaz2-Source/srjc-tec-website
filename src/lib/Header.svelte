@@ -1,11 +1,11 @@
 <script lang="ts">
-	import NavBar from './NavBar.svelte';
-	import NavButtonIcon from '$lib/icons/nav-button.svg?component';
+	import { resolve } from '$app/paths';
+	import Button from './Button.svelte';
 
-	const tabs = ['About', 'Contact', 'Projects'];
+	const tabs: string[] = ['About', 'Events', 'Team', 'Sponsors', 'Projects'];
 </script>
 
-<header class="border-b-2 border-b-black bg-white">
+<header class="bg-header">
 	<div
 		class="
     mx-auto max-w-7xl px-4
@@ -15,30 +15,31 @@
 		<div class="flex h-16 items-center justify-between">
 			<div
 				class="
-      flex-1
-      md:flex md:items-center md:gap-12
+      flex flex-1 items-center gap-4
+      md:gap-12
     ">
-				<a class="block text-red-400" href="#">
+				<a class="block text-brand" href="#">
 					<span class="sr-only">Home</span>
 					Logo
-					<span class="text-lg font-semibold text-black">TEC</span>
+					<span class="text-lg font-semibold text-header-content">TEC</span>
 				</a>
 			</div>
 
-			<div class="md:flex md:items-center md:gap-12">
-				<nav
-					aria-label="Main"
-					class="
-       hidden
-       md:block
-     ">
-					<ul class="flex items-center gap-6 text-sm">
+			<div
+				class="
+      flex items-stretch gap-4 self-stretch
+      md:gap-12
+    ">
+				<nav aria-label="Main" class="block">
+					<ul class="flex size-full items-stretch text-sm">
 						{#each tabs as label (label)}
 							<li>
 								<a
 									class="
-           text-gray-500 transition
-           hover:text-gray-500/75
+           flex h-full items-center px-2 text-nav-tab-label transition
+           hover:bg-nav-tab-hover
+           active:bg-nav-tab-hover
+           md:px-4
          "
 									href="#">
 									{label}
@@ -49,22 +50,7 @@
 				</nav>
 
 				<div class="flex items-center gap-4">
-					<div class="sm:flex sm:gap-4">
-						<div
-							class="
-         hidden
-         sm:flex
-       ">
-							<a
-								class="
-          rounded-md bg-button-primary px-5 py-2.5 text-sm font-medium
-          text-black
-        "
-								href="#">
-								Join Us
-							</a>
-						</div>
-					</div>
+					<Button href={resolve('/')}>Join Us</Button>
 				</div>
 			</div>
 		</div>
