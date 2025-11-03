@@ -39,13 +39,6 @@
       sm:mt-6
     ">
 				<Button href={resolve('/')}>Join Us</Button>
-				<div
-					class="
-       mt-4 flex justify-center gap-4
-       sm:mt-6
-     ">
-				</div>
-				<Button href={resolve('/')}>Please</Button>
 			</div>
 		</div>
 	</div>
