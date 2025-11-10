@@ -6,8 +6,12 @@
 </script>
 
 <Header></Header>
+
+<!-- Main content for the title page -->
 <hr>
 <HeroSection></HeroSection>
 <hr>
 <ProjectShowcase></ProjectShowcase>
+
+
 <Footer></Footer>
