@@ -2,6 +2,39 @@
 @plugin "@tailwindcss/typography";
 
 @theme inline {
+	/* semantic color naming: 
+		background:         [prominence]-[role]
+    foreground or text: on-[prominence]-[role]
+	*/
+
+	/* Main colors */
+	--color-background: var(--color-white);
+	--color-on-background: var(--color-black);
+
+	--color-surface: var(--color-zinc-200);
+	--color-on-surface: var(--color-black);
+
+	--color-primary: var(--color-green-600);
+	--color-on-primary: var(--color-black);
+
+	--color-secondary: var(--color-green-700);
+	--color-on-secondary: var(--color-white);
+
+	/* Interactive hover */
+	--color-primary-hover: var(--color-white);
+	--color-secondary-hover: var(--color-black);
+
+	/* Interactive disabled */
+	--color-primary-disabled: var(--color-zinc-400);
+	--color-secondary-disabled: var(--color-zinc-600);
+
+	/* Subtext */
+	--color-on-primary-muted: var(--color-zinc-500);
+	--color-on-background-muted: var(--color-zinc-500);
+
+
+
+	/* Component specific colors */
 	--color-header-content: var(--color-black);
 	--color-header: var(--color-green-50);
 
@@ -28,8 +61,8 @@
 	:host {
 		/* active when prefers-color-scheme: dark */
 		@variant dark {
-			--color-button-primary: var(--color-red-400);
-			--color-button-tab-active: var(--color-white);
+			/* --color-button-primary: var(--color-red-400);
+			--color-button-tab-active: var(--color-white); */
 		}
 	}
 }
