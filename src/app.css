@@ -34,7 +34,8 @@
 
 
 
-	/* Component specific colors */
+	/* Old colors */
+	/* TODO: replace usages with above color variables */
 	--color-header-content: var(--color-black);
 	--color-header: var(--color-green-50);
 
