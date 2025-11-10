@@ -5,6 +5,9 @@
 	--color-header-content: var(--color-black);
 	--color-header: var(--color-green-50);
 
+	--color-footer-surface: var(--color-emerald-600);
+	--color-footer-content: var(--color-slate-100);
+
 	--color-nav-tab-label: var(--color-zinc-800);
 	--color-nav-tab-hover: color-mix(
 		in oklab,
