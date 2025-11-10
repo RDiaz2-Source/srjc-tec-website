@@ -36,9 +36,10 @@
 							<li>
 								<a
 									class="
-           flex h-full items-center px-2 text-nav-tab-label transition
+           flex h-full items-center px-1 text-nav-tab-label transition
            hover:bg-nav-tab-hover
            active:bg-nav-tab-hover
+           sm:px-2
            md:px-4
          "
 									href="#">
@@ -48,8 +49,10 @@
 						{/each}
 					</ul>
 				</nav>
-
-				<div class="flex items-center gap-4">
+				<div class="
+      hidden self-center
+      sm:block
+    ">
 					<Button href={resolve('/')}>Join Us</Button>
 				</div>
 			</div>
